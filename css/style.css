@@ -1,0 +1,90 @@
+.not-visible {
+  display: none !important;
+}
+
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+body .nav-top {
+  background-color: white;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid black;
+  display: flex;
+  width: 100%;
+}
+body .nav-top .hamburger-button {
+  border-radius: 3%;
+  font-weight: bolder;
+  font-size: 1.5em;
+  padding: 5px;
+  color: navy;
+  margin: 5px;
+}
+body .nav-top .top-title {
+  width: 100%;
+  align-self: center;
+}
+body .nav-top .top-title h3 {
+  margin: 0 auto;
+}
+body .nav-top .top-title p {
+  margin: 0 auto;
+}
+body .side-nav {
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  width: 150px;
+  margin-right: 50px;
+  height: 100vh;
+}
+body .side-nav h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+body .side-nav p {
+  text-align: center;
+  margin-top: 0;
+}
+body .side-nav ul {
+  list-style-type: none;
+  margin-left: -10px;
+}
+body .side-nav ul li {
+  margin-top: 15px;
+}
+body .main-content {
+  height: 100%;
+  width: calc(100% - 150px);
+  margin-left: 150px;
+}
+body header {
+  max-height: 100vh;
+}
+body header .presentation-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-photo.jpg");
+  background-size: contain;
+  min-height: 100vh;
+  width: 100vw;
+  color: whitesmoke;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.my-name {
+  color: navy;
+}
+
+.my-title {
+  font-weight: 200;
+}
+
+.fa-solid {
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
