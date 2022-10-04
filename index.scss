@@ -1,8 +1,9 @@
-$bg-color: white;
+$nav-color: white;
 $primary-color: navy;
-$sidebar-length: 150px;
+$sidebar-length: 175px;
 $banner-font-color: whitesmoke;
 $section-bar-size: 80px;
+$section-bg-color: rgb(240, 240, 250);
 
 // Utilities
 
@@ -15,15 +16,15 @@ $section-bar-size: 80px;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0 auto;
-    box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Exo 2', sans-serif !important;
     .nav-top {
-        background-color: $bg-color;
-        height: 50px;
+        background-color: $nav-color;
+        height: 75px;
         margin: 0 auto;
         border: 1px solid black;
         display: flex;
@@ -54,7 +55,7 @@ body {
             left:0;
             z-index: 1;
             width: $sidebar-length;
-            margin-right: 50px;
+            // margin-right: 50px;
             height: 100vh;
             h3 {
                 text-align: center;
@@ -75,6 +76,7 @@ body {
             ul {
                 list-style-type: none;
                 margin-left: 15px;
+                padding: 0;
                 li {
                     margin-top: 15px;
                 }
@@ -106,6 +108,19 @@ body {
                 line-height: $section-bar-size;
                 font-weight: 300;
                 font-size: 2em;
+                margin-left: 50px;
+            }
+        }
+        .about-me-section {
+            padding: 50px;
+            .about-me-title {
+                font-weight: bold;
+                color: $primary-color;
+                font-size: 1.5em;
+                margin-bottom: 30px;
+            }
+            .about-me-text {
+                font-size: 1.1em;
             }
         }
     
@@ -115,9 +130,11 @@ body {
 
 .my-name {
     color: $primary-color;
+    line-height: 1;
+    font-size: 1.5em;
 }
 .my-title {
-    font-weight: 200;
+    font-weight: 200 !important;
 }
 
 .fa-user {
@@ -129,7 +146,15 @@ body {
     margin-right: 5px;
 }
 
+.fa-trophy {
+    margin-right: 8px;
+}
+
 .fa-envelope {
     margin-right: 7px;
     margin-left: 2px;
+}
+
+.tech-bg {
+    background-image: linear-gradient(rgba(240, 240, 250, 0.9), rgba(240, 240, 250, 0.9)),url("../img/techbg.png");
 }

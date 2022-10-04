@@ -5,16 +5,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0 auto;
-  box-sizing: border-box;
-  font-family: "Exo 2", sans-serif;
+  font-family: "Exo 2", sans-serif !important;
 }
 body .nav-top {
   background-color: white;
-  height: 50px;
+  height: 75px;
   margin: 0 auto;
   border: 1px solid black;
   display: flex;
@@ -42,8 +42,7 @@ body .side-nav {
   position: fixed;
   left: 0;
   z-index: 1;
-  width: 150px;
-  margin-right: 50px;
+  width: 175px;
   height: 100vh;
 }
 body .side-nav h3 {
@@ -62,14 +61,15 @@ body .side-nav hr {
 body .side-nav ul {
   list-style-type: none;
   margin-left: 15px;
+  padding: 0;
 }
 body .side-nav ul li {
   margin-top: 15px;
 }
 body .main-content {
   height: 100%;
-  width: calc(100% - 150px);
-  margin-left: 150px;
+  width: calc(100% - 175px);
+  margin-left: 175px;
 }
 body .main-content header {
   max-height: 100vh;
@@ -93,14 +93,29 @@ body .main-content .section-bar h2 {
   line-height: 80px;
   font-weight: 300;
   font-size: 2em;
+  margin-left: 50px;
+}
+body .main-content .about-me-section {
+  padding: 50px;
+}
+body .main-content .about-me-section .about-me-title {
+  font-weight: bold;
+  color: navy;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+body .main-content .about-me-section .about-me-text {
+  font-size: 1.1em;
 }
 
 .my-name {
   color: navy;
+  line-height: 1;
+  font-size: 1.5em;
 }
 
 .my-title {
-  font-weight: 200;
+  font-weight: 200 !important;
 }
 
 .fa-user {
@@ -112,9 +127,17 @@ body .main-content .section-bar h2 {
   margin-right: 5px;
 }
 
+.fa-trophy {
+  margin-right: 8px;
+}
+
 .fa-envelope {
   margin-right: 7px;
   margin-left: 2px;
+}
+
+.tech-bg {
+  background-image: linear-gradient(rgba(240, 240, 250, 0.9), rgba(240, 240, 250, 0.9)), url("../img/techbg.png");
 }
 
 /*# sourceMappingURL=style.css.map */
