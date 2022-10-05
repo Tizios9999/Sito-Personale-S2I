@@ -27,19 +27,19 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/index.js" defer></script>
     <title>Davide Santonocito</title>
   </head>
   <body>
-    <nav class="nav-top not-visible">
-      <div class="hamburger-button">&#9776;</div>
+    <nav class="nav-top">
+      <div class="hamburger-button" id="ham-btn">&#9776;</div>
       <!-- <i class="fa-solid fa-bars"></i> alternative -->
       <div class="top-title">
         <h3 class="my-name">Davide Santonocito</h3>
         <p class="my-title">Full Stack Developer</p>
       </div>
     </nav>
-    <aside class="side-nav">
+    <aside class="side-nav d-none d-md-block">
       <h3 class="my-name">Davide Santonocito</h3>
       <p class="my-title">Full Stack Developer</p>
       <hr />
@@ -50,7 +50,7 @@
         <li><i class="fa-solid fa-envelope"></i>Contatti</li>
       </ul>
     </aside>
-    <div class="main-content">
+    <div class="main-content ml-0">
       <header>
         <div class="presentation-container">&nbsp;</div>
       </header>
@@ -73,6 +73,105 @@
         </p>
       </section>
       <div class="section-bar"><h2>PORTFOLIO</h2></div>
+      <section class="portfolio-section tech-bg">
+        <!-- Container -->
+        <div class="row">
+          <!-- Column -->
+          <div class="col-md-4 mb-4 d-flex align-items-stretch">
+            <!--Card-->
+            <div class="card">
+              <!--Card image-->
+              <div class="view overlay">
+                <img
+                  src="./img/project-site.png"
+                  class="card-img-top"
+                  alt="Sito personale portfolio"
+                />
+                <a href="#">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">Questo sito web</h4>
+                <!--Text-->
+                <p class="card-text">
+                  Questo sito web portfolio. Tecnologie utilizzate: HTML, CSS,
+                  BOOTSTRAP, SASS.
+                </p>
+              </div>
+            </div>
+            <!--/.Card-->
+          </div>
+          <!-- Column -->
+
+          <!-- Column -->
+          <div class="col-md-4 mb-4 d-flex align-items-stretch">
+            <!--Card-->
+            <div class="card">
+              <!--Card image-->
+              <div class="view overlay">
+                <img
+                  src="./img/project-counter.png"
+                  class="card-img-top"
+                  alt=""
+                />
+                <a href="#">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">A simple JS Counter</h4>
+                <!--Text-->
+                <p class="card-text">
+                  Un contatore semplice fatto in JavaScript come test pratico
+                  per Start 2 Impact. Lo stile è volutamente retrò.
+                </p>
+              </div>
+            </div>
+            <!--/.Card-->
+          </div>
+          <!-- Column -->
+
+          <!-- Column -->
+          <div class="col-md-4 mb-4 d-flex align-items-stretch">
+            <!--Card-->
+            <div class="card">
+              <!--Card image-->
+              <div class="view overlay coming-soon">
+                <img
+                  src="./img/project-breakout.png"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="coming-soon-text">Coming Soon!</div>
+                <div class="mask rgba-white-slight"></div>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">Il mio Breakout</h4>
+                <!--Text-->
+                <p class="card-text">
+                  La mia personale versione del classico gioco arcade Breakout.
+                  Tutto programmato in puro JavaScript, offrirà anche la
+                  possibilità di creare i propri livelli tramite un'interfaccia
+                  per il level design.
+                </p>
+              </div>
+            </div>
+            <!--/.Card-->
+          </div>
+          <!-- Column -->
+        </div>
+        <!-- Container -->
+      </section>
     </div>
   </body>
 </html>
