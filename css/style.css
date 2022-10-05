@@ -125,6 +125,9 @@ body .main-content .about-me-section .about-me-text {
 body .main-content .portfolio-section {
   padding: 30px;
 }
+body .main-content .skills-section {
+  padding: 50px;
+}
 
 .my-name {
   color: navy;
