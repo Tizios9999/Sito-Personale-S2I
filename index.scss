@@ -145,10 +145,11 @@ body {
             padding: 50px;
             .skills-container {
                 padding: 15px;
-                background-color: lightgray;
-                justify-content: space-around;
+                // background-color: rgb(240, 240, 250);
+                justify-content: center;
                 flex-flow: wrap;
                 gap: 30px;
+                margin-bottom: 50px;
                 .skill-icon {
                     .icon-window {
                         height: 60px;
@@ -162,6 +163,10 @@ body {
                         transition-duration: 0.2s;
                         transition-timing-function: ease;
                         transition-delay: 0s;
+                    }
+                    img {
+                        height: 100%;
+                        width: 100%;
                     }
                 }
                 
@@ -198,7 +203,13 @@ body {
                     
                 
             }
+
+            .skills-main-text {
+                color: $primary-color;
+                text-align: center;
+            }
         }
+
     }
     
 }
