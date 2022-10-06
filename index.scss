@@ -4,6 +4,7 @@ $sidebar-length: 175px;
 $banner-font-color: whitesmoke;
 $section-bar-size: 80px;
 $section-bg-color: rgb(240, 240, 250);
+$base-font-color: black;
 
 // Utilities
 
@@ -209,7 +210,37 @@ body {
                 text-align: center;
             }
         }
-
+        .contacts-section {
+            padding: 50px;
+            flex-direction: column;
+            gap: 30px;
+            .contact-card {
+                width: 100%;
+                a {
+                    text-decoration: none;
+                    font-size: 1.1em;
+                    color: $base-font-color;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    i {
+                        margin-right: 20px;
+                        font-size: 30px;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+                
+            }
+            .contact-card:hover {
+                a {
+                    color: $primary-color;
+                }
+                
+            }
+        }
+        
     }
     
 }

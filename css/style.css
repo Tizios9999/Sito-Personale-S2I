@@ -189,6 +189,32 @@ body .main-content .skills-section .skills-main-text {
   color: navy;
   text-align: center;
 }
+body .main-content .contacts-section {
+  padding: 50px;
+  flex-direction: column;
+  gap: 30px;
+}
+body .main-content .contacts-section .contact-card {
+  width: 100%;
+}
+body .main-content .contacts-section .contact-card a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .main-content .contacts-section .contact-card a i {
+  margin-right: 20px;
+  font-size: 30px;
+}
+body .main-content .contacts-section .contact-card a p {
+  text-align: center;
+}
+body .main-content .contacts-section .contact-card:hover a {
+  color: navy;
+}
 
 .my-name {
   color: navy;
