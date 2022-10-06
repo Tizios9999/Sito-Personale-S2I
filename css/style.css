@@ -13,6 +13,9 @@ body {
   font-family: "Exo 2", sans-serif !important;
 }
 body .nav-top {
+  position: fixed;
+  top: 0;
+  z-index: 98;
   background-color: white;
   height: 75px;
   margin: 0 auto;
@@ -127,6 +130,56 @@ body .main-content .portfolio-section {
 }
 body .main-content .skills-section {
   padding: 50px;
+}
+body .main-content .skills-section .skills-container {
+  padding: 15px;
+  background-color: lightgray;
+  justify-content: space-around;
+  flex-flow: wrap;
+  gap: 30px;
+}
+body .main-content .skills-section .skills-container .skill-icon .icon-window {
+  height: 60px;
+  width: 60px;
+  margin: 10px auto;
+}
+@media (min-width: 1080px) {
+  body .main-content .skills-section .skills-container .skill-icon .icon-window {
+    filter: grayscale(100%);
+    transition: all 0.2s;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+}
+body .main-content .skills-section .skills-container .skill-icon .skill-tip {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 0.8em;
+  border-radius: 3px;
+  height: 22px;
+  line-height: 22px;
+  width: 120px;
+  color: navy;
+}
+@media (max-width: 1079px) {
+  body .main-content .skills-section .skills-container .skill-icon .skill-tip {
+    background-color: navy;
+    color: whitesmoke;
+  }
+}
+@media (min-width: 1080px) {
+  body .main-content .skills-section .skills-container .skill-icon:hover .icon-window {
+    transform: scale(1.2);
+    filter: none;
+  }
+}
+body .main-content .skills-section .skills-container .skill-icon:hover .skill-tip {
+  background-color: navy;
+  color: whitesmoke;
 }
 
 .my-name {
