@@ -352,9 +352,6 @@ body {
         display: block;
         margin: 0 auto;
     }
-    @media (prefers-color-scheme: dark) {
-        filter: brightness(100%);
-      }
 }
 
 @keyframes slide-left {
