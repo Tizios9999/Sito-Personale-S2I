@@ -6,6 +6,13 @@ $section-bar-size: 80px;
 $section-bg-color: rgb(240, 240, 250);
 $base-font-color: black;
 
+@media (prefers-color-scheme: dark) {
+    $nav-color: black;
+    $primary-color: lightblue;
+    $banner-font-color: black;
+    $base-font-color: white;
+  }
+
 // Utilities
 
 .not-visible {
