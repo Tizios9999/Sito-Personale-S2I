@@ -11,6 +11,7 @@
 body {
   margin: 0 auto;
   font-family: "Exo 2", sans-serif !important;
+  color: black;
 }
 body .nav-top {
   position: fixed;
@@ -19,7 +20,7 @@ body .nav-top {
   background-color: white;
   height: 75px;
   margin: 0 auto;
-  border: 1px solid black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   display: flex;
   width: 100%;
   display: none;
@@ -34,8 +35,9 @@ body .nav-top .hamburger-button {
   font-weight: bolder;
   font-size: 1.5em;
   padding: 5px;
-  color: navy;
+  color: rgb(124, 43, 43);
   margin: 5px;
+  cursor: pointer;
 }
 body .nav-top .top-title {
   width: 100%;
@@ -77,6 +79,14 @@ body .side-nav ul {
 }
 body .side-nav ul li {
   margin-top: 15px;
+  cursor: pointer;
+}
+body .side-nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+body .side-nav ul li a:hover {
+  color: rgb(124, 43, 43);
 }
 body .main-content {
   height: 100%;
@@ -103,7 +113,7 @@ body .main-content header .presentation-container {
   background-position: center;
 }
 body .main-content .section-bar {
-  background-color: navy;
+  background-color: rgb(124, 43, 43);
   height: 80px;
   color: whitesmoke;
 }
@@ -118,7 +128,7 @@ body .main-content .about-me-section {
 }
 body .main-content .about-me-section .about-me-title {
   font-weight: bold;
-  color: navy;
+  color: rgb(124, 43, 43);
   font-size: 1.5em;
   margin-bottom: 30px;
 }
@@ -137,6 +147,9 @@ body .main-content .skills-section .skills-container {
   flex-flow: wrap;
   gap: 30px;
   margin-bottom: 50px;
+}
+body .main-content .skills-section .skills-container .skill-icon {
+  cursor: pointer;
 }
 body .main-content .skills-section .skills-container .skill-icon .icon-window {
   height: 60px;
@@ -167,11 +180,11 @@ body .main-content .skills-section .skills-container .skill-icon .skill-tip {
   height: 22px;
   line-height: 22px;
   width: 120px;
-  color: navy;
+  color: rgb(124, 43, 43);
 }
 @media (max-width: 1079px) {
   body .main-content .skills-section .skills-container .skill-icon .skill-tip {
-    background-color: navy;
+    background-color: rgb(124, 43, 43);
     color: whitesmoke;
   }
 }
@@ -182,42 +195,53 @@ body .main-content .skills-section .skills-container .skill-icon .skill-tip {
   }
 }
 body .main-content .skills-section .skills-container .skill-icon:hover .skill-tip {
-  background-color: navy;
+  background-color: rgb(124, 43, 43);
   color: whitesmoke;
 }
 body .main-content .skills-section .skills-main-text {
-  color: navy;
+  color: rgb(124, 43, 43);
   text-align: center;
 }
 body .main-content .contacts-section {
   padding: 50px;
-  flex-direction: column;
-  gap: 30px;
 }
 body .main-content .contacts-section .contact-card {
   width: 100%;
+  cursor: pointer;
 }
 body .main-content .contacts-section .contact-card a {
   text-decoration: none;
   font-size: 1.1em;
   color: black;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 body .main-content .contacts-section .contact-card a i {
   margin-right: 20px;
   font-size: 30px;
+  display: inline;
+}
+@media (max-width: 540px) {
+  body .main-content .contacts-section .contact-card a i {
+    display: block;
+    margin-right: 0;
+    text-align: center;
+  }
 }
 body .main-content .contacts-section .contact-card a p {
   text-align: center;
+  display: inline-block;
+}
+@media (max-width: 540px) {
+  body .main-content .contacts-section .contact-card a p {
+    display: block;
+    text-align: center;
+  }
 }
 body .main-content .contacts-section .contact-card:hover a {
-  color: navy;
+  color: rgb(124, 43, 43);
 }
 
 .my-name {
-  color: navy;
+  color: rgb(124, 43, 43);
   line-height: 1;
   font-size: 1.5em;
 }
@@ -255,6 +279,10 @@ body .main-content .contacts-section .contact-card:hover a {
 }
 .card .overlay {
   height: 300px;
+}
+
+.card:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .card-img-top {
