@@ -35,7 +35,7 @@ body .nav-top .hamburger-button {
   font-weight: bolder;
   font-size: 1.5em;
   padding: 5px;
-  color: rgb(124, 43, 43);
+  color: navy;
   margin: 5px;
   cursor: pointer;
 }
@@ -86,7 +86,7 @@ body .side-nav ul li a {
   color: black;
 }
 body .side-nav ul li a:hover {
-  color: rgb(124, 43, 43);
+  color: navy;
 }
 body .main-content {
   height: 100%;
@@ -103,7 +103,7 @@ body .main-content header {
   max-height: 100vh;
 }
 body .main-content header .presentation-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-photo.jpg");
+  background: url("../img/bg-photo.jpg");
   background-size: contain;
   min-height: 100vh;
   width: 100vw;
@@ -113,7 +113,7 @@ body .main-content header .presentation-container {
   background-position: center;
 }
 body .main-content .section-bar {
-  background-color: rgb(124, 43, 43);
+  background-color: navy;
   height: 80px;
   color: whitesmoke;
 }
@@ -128,7 +128,7 @@ body .main-content .about-me-section {
 }
 body .main-content .about-me-section .about-me-title {
   font-weight: bold;
-  color: rgb(124, 43, 43);
+  color: navy;
   font-size: 1.5em;
   margin-bottom: 30px;
 }
@@ -180,11 +180,11 @@ body .main-content .skills-section .skills-container .skill-icon .skill-tip {
   height: 22px;
   line-height: 22px;
   width: 120px;
-  color: rgb(124, 43, 43);
+  color: navy;
 }
 @media (max-width: 1079px) {
   body .main-content .skills-section .skills-container .skill-icon .skill-tip {
-    background-color: rgb(124, 43, 43);
+    background-color: navy;
     color: whitesmoke;
   }
 }
@@ -195,11 +195,11 @@ body .main-content .skills-section .skills-container .skill-icon .skill-tip {
   }
 }
 body .main-content .skills-section .skills-container .skill-icon:hover .skill-tip {
-  background-color: rgb(124, 43, 43);
+  background-color: navy;
   color: whitesmoke;
 }
 body .main-content .skills-section .skills-main-text {
-  color: rgb(124, 43, 43);
+  color: navy;
   text-align: center;
 }
 body .main-content .contacts-section {
@@ -214,13 +214,13 @@ body .main-content .contacts-section .contact-card a {
   font-size: 1.1em;
   color: black;
 }
-body .main-content .contacts-section .contact-card a i {
+body .main-content .contacts-section .contact-card a .contact-icon {
   margin-right: 20px;
   font-size: 30px;
   display: inline;
 }
-@media (max-width: 540px) {
-  body .main-content .contacts-section .contact-card a i {
+@media (max-width: 545px) {
+  body .main-content .contacts-section .contact-card a .contact-icon {
     display: block;
     margin-right: 0;
     text-align: center;
@@ -230,18 +230,18 @@ body .main-content .contacts-section .contact-card a p {
   text-align: center;
   display: inline-block;
 }
-@media (max-width: 540px) {
+@media (max-width: 545px) {
   body .main-content .contacts-section .contact-card a p {
     display: block;
     text-align: center;
   }
 }
-body .main-content .contacts-section .contact-card:hover a {
-  color: rgb(124, 43, 43);
+body .main-content .contacts-section .contact-card:hover p {
+  color: navy;
 }
 
 .my-name {
-  color: rgb(124, 43, 43);
+  color: navy;
   line-height: 1;
   font-size: 1.5em;
 }
@@ -311,6 +311,33 @@ body .main-content .contacts-section .contact-card:hover a {
 
 .shadowed {
   filter: brightness(50%);
+}
+
+.impact-icon {
+  height: 24px;
+  width: 24px;
+  filter: brightness(0);
+  display: inline-block;
+  margin-right: 20px;
+}
+@media (max-width: 545px) {
+  .impact-icon {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    width: 0;
+  }
+  to {
+    width: 175px;
+  }
+}
+.temporary-menu {
+  animation-name: slide-left;
+  animation-duration: 0.4s;
 }
 
 /*# sourceMappingURL=style.css.map */

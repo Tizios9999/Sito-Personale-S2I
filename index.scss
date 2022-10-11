@@ -1,5 +1,5 @@
 $nav-color: white;
-$primary-color: rgb(124, 43, 43);
+$primary-color: navy;
 $sidebar-length: 175px;
 $banner-font-color: whitesmoke;
 $section-bar-size: 80px;
@@ -114,7 +114,7 @@ body {
         header {
             max-height: 100vh;
             .presentation-container {
-                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-photo.jpg");
+                background: url("../img/bg-photo.jpg");
                 background-size: contain;
                 min-height: 100vh;
                 width: 100vw;
@@ -229,11 +229,11 @@ body {
                     text-decoration: none;
                     font-size: 1.1em;
                     color: $base-font-color;
-                    i {
+                    .contact-icon {
                         margin-right: 20px;
                         font-size: 30px;
                         display: inline;
-                        @media  (max-width: 540px){
+                        @media  (max-width: 545px){
                             display: block;
                             margin-right: 0;
                             text-align: center;
@@ -242,7 +242,7 @@ body {
                     p {
                         text-align: center;
                         display: inline-block;
-                        @media  (max-width: 540px){
+                        @media  (max-width: 545px){
                             display: block;
                             text-align: center;
                         }
@@ -251,7 +251,7 @@ body {
                 
             }
             .contact-card:hover {
-                a {
+                p {
                     color: $primary-color;
                 }
                 
@@ -331,6 +331,28 @@ body {
     color: white;
   }
 
-  .shadowed {
+.shadowed {
     filter: brightness(50%);
+}
+
+.impact-icon {
+    height: 24px;
+    width: 24px;
+    filter: brightness(0);
+    display: inline-block;
+    margin-right: 20px;
+    @media  (max-width: 545px){
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@keyframes slide-left {
+    from {width: 0;}
+    to {width: $sidebar-length;}
   }
+
+.temporary-menu {
+    animation-name: slide-left;
+    animation-duration: 0.4s;
+}
