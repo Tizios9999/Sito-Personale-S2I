@@ -326,6 +326,11 @@ body .main-content .contacts-section .contact-card:hover p {
     margin: 0 auto;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .impact-icon {
+    filter: brightness(100%);
+  }
+}
 
 @keyframes slide-left {
   from {
