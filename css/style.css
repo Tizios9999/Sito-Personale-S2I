@@ -264,10 +264,6 @@ body .main-content .contacts-section .contact-card:hover p {
   margin-left: 2px;
 }
 
-.tech-bg {
-  background-image: linear-gradient(rgba(240, 240, 250, 0.9), rgba(240, 240, 250, 0.9)), url("../img/techbg.png");
-}
-
 @media (max-width: 767px) {
   .card {
     width: 100%;
@@ -322,6 +318,10 @@ body .main-content .contacts-section .contact-card:hover p {
     display: block;
     margin: 0 auto;
   }
+}
+
+.tech-bg {
+  background-image: linear-gradient(rgba(240, 240, 250, 0.9), rgba(240, 240, 250, 0.9)), url("../img/techbg.png");
 }
 
 .shadowed {

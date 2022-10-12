@@ -292,10 +292,6 @@ body {
     margin-left: 2px;
 }
 
-.tech-bg {
-    background-image: linear-gradient(rgba(240, 240, 250, 0.9), rgba(240, 240, 250, 0.9)),url("../img/techbg.png");
-}
-
 .card {
     @media  (max-width: 767px){
         width: 100%;   
@@ -348,6 +344,12 @@ body {
         display: block;
         margin: 0 auto;
     }
+}
+
+// Utilities
+
+.tech-bg {
+    background-image: linear-gradient(rgba(240, 240, 250, 0.9), rgba(240, 240, 250, 0.9)),url("../img/techbg.png");
 }
 
 // Classes added with JavaScript
