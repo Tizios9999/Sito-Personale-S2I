@@ -86,7 +86,7 @@ body .side-nav ul li a {
   color: black;
 }
 body .side-nav ul li a:hover {
-  color: navy;
+  color: rgb(49, 49, 253);
 }
 body .main-content {
   height: 100%;
@@ -237,7 +237,7 @@ body .main-content .contacts-section .contact-card a p {
   }
 }
 body .main-content .contacts-section .contact-card:hover p {
-  color: navy;
+  color: rgb(49, 49, 253);
 }
 
 .my-name {

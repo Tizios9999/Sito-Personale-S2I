@@ -1,5 +1,6 @@
 $nav-color: white;
 $primary-color: navy;
+$highlight-default-color: rgb(49, 49, 253);
 $sidebar-length: 175px;
 $banner-font-color: whitesmoke;
 $section-bar-size: 80px;
@@ -104,7 +105,7 @@ body {
                         color: $base-font-color;
                     }
                     a:hover {
-                        color: $primary-color;
+                        color: $highlight-default-color;
                     }
                 }
             }
@@ -259,7 +260,7 @@ body {
             }
             .contact-card:hover {
                 p {
-                    color: $primary-color;
+                    color: $highlight-default-color;
                 }
                 
             }
