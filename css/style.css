@@ -144,9 +144,6 @@ body .main-content .skills-section .skills-container {
   gap: 30px;
   margin-bottom: 50px;
 }
-body .main-content .skills-section .skills-container .skill-icon {
-  cursor: pointer;
-}
 body .main-content .skills-section .skills-container .skill-icon .icon-window {
   height: 60px;
   width: 60px;
