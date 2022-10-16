@@ -39,7 +39,7 @@ body .nav-top .top-title {
   width: 100%;
   align-self: center;
 }
-body .nav-top .top-title h3 {
+body .nav-top .top-title h1 {
   margin: 0 auto;
 }
 body .nav-top .top-title p {
@@ -55,7 +55,7 @@ body .side-nav {
   height: 100vh;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-body .side-nav h3 {
+body .side-nav h1 {
   text-align: center;
   margin-bottom: 0;
   margin-top: 10px;
@@ -202,29 +202,29 @@ body .main-content .contacts-section .contact-card {
   width: 100%;
   cursor: pointer;
 }
-body .main-content .contacts-section .contact-card a {
+body .main-content .contacts-section .contact-card .contact-link {
   text-decoration: none;
   font-size: 1.1em;
   color: black;
 }
-body .main-content .contacts-section .contact-card a .contact-icon {
+body .main-content .contacts-section .contact-card .contact-link .contact-icon {
   margin-right: 20px;
   font-size: 30px;
   display: inline;
 }
 @media (max-width: 545px) {
-  body .main-content .contacts-section .contact-card a .contact-icon {
+  body .main-content .contacts-section .contact-card .contact-link .contact-icon {
     display: block;
     margin-right: 0;
     text-align: center;
   }
 }
-body .main-content .contacts-section .contact-card a p {
+body .main-content .contacts-section .contact-card .contact-link p {
   text-align: center;
   display: inline-block;
 }
 @media (max-width: 545px) {
-  body .main-content .contacts-section .contact-card a p {
+  body .main-content .contacts-section .contact-card .contact-link p {
     display: block;
     text-align: center;
   }
@@ -237,6 +237,7 @@ body .main-content .contacts-section .contact-card:hover p {
   color: navy;
   line-height: 1;
   font-size: 1.5em;
+  margin: 0;
 }
 
 .my-title {
@@ -257,8 +258,13 @@ body .main-content .contacts-section .contact-card:hover p {
 }
 
 .fa-envelope {
-  margin-right: 7px;
+  margin-right: 0;
   margin-left: 2px;
+}
+
+.fa-at {
+  margin: 0;
+  font-size: 13px;
 }
 
 @media (max-width: 767px) {

@@ -53,7 +53,7 @@ body {
  
             width: 100%;
             align-self: center;
-            h3 {
+            h1 {
                 margin: 0 auto;
             }
             p {
@@ -71,7 +71,7 @@ body {
             width: $sidebar-length;
             height: 100vh;
             box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-            h3 {
+            h1 {
                 text-align: center;
                 margin-bottom: 0;
                 margin-top: 10px;
@@ -226,7 +226,7 @@ body {
             .contact-card {
                 width: 100%;
                 cursor: pointer;
-                a {
+                .contact-link {
                     text-decoration: none;
                     font-size: 1.1em;
                     color: $base-font-color;
@@ -267,6 +267,7 @@ body {
     color: $primary-color;
     line-height: 1;
     font-size: 1.5em;
+    margin: 0;
 
 }
 .my-title {
@@ -287,8 +288,13 @@ body {
 }
 
 .fa-envelope {
-    margin-right: 7px;
+    margin-right: 0;
     margin-left: 2px;
+}
+
+.fa-at {
+    margin: 0;
+    font-size: 13px;
 }
 
 .card {
