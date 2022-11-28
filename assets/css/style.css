@@ -133,6 +133,9 @@ body .main-content .about-me-section .about-me-text {
 }
 body .main-content .portfolio-section {
   padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
 }
 body .main-content .skills-section {
   padding: 50px;

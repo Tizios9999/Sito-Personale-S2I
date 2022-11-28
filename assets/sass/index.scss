@@ -152,6 +152,9 @@ body {
 
         .portfolio-section {
             padding: 30px;
+            display: flex;
+            justify-content: center;
+            flex-flow: column wrap;
         }
     
         .skills-section {
